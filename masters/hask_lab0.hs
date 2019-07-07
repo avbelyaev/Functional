@@ -28,3 +28,19 @@ average xs = sum xs / n
 -- read from right to left
 wrapper = return . show . average . map read . words
 
+
+
+-- basics
+quadratic​ a b c = (x1, x2)
+  ​where​ d=b^ ​2​ - ​4​ *a*c
+        sd = sqrt d
+        x1=(-b-sd)/(​2​ *a)
+        x2=(-b+sd)/(​2​ *a)
+
+quadratic​2 a b c =
+​  let​ d=b^ ​2​ - ​4​ *a*c
+      sd = sqrt d
+      x1=(-b-sd)/(​2​ *a)
+      x2=(-b+sd)/(​2​ *a)
+  ​in​ (x1, x2)
+
